@@ -1,11 +1,11 @@
-wrapper {
+wrapper { background: black;
 
 }
 
-container {
+.container {
   position: relative;
     padding: 8px 8px 32px 8px;
-    background: #dddccf;
+    background: gray;
 }
 
 .container:after {
