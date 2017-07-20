@@ -1,6 +1,6 @@
 let req = new XMLHttpRequest();
-request.open('GET', '/https://api.github.com/users/AgentShir');
-request.send();
+req.open('GET', '/https://api.github.com/users/AgentShir');
+req.send();
 
 // let req = new XMLHttpRequest();
 // req.open("GET", "https://api.github.com/");
