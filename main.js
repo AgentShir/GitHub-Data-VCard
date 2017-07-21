@@ -33,18 +33,16 @@ data.results.forEach (function(person) {
 //     list += `<li>${person.name}</li>`;
 //   });
 
-// htmlString +=
-// `<div class="customer">
-//   <img src="${item.picture.large}">
-//     <h2>${item.name.first} ${item.name.last}</h2>
-//       <p>${item.email}</p>
-//       <p>${item.location.street}</p>
-//       <p>${item.location.city}, ${item.location.state} ${item.location.postcode}</p>
-//       <p>${item.phone}</p>
-//       <p>${item.id.value}</p>
-// </div>`
-// })
-// htmlString += `</div>`
+htmlString +=
+`<div class="basics">
+    <h2>The Basics</h2>
+      <p>Name: ${data.login}</p>
+      <p>Github URL ${data.html_url}</p>
+      <p>Company: ${data.company}</p>
+      <p>Website: ${data.blog}</p>
+</div>`
+})
+htmlString += `</div>`
 
 // Header <h1>${data.name}</h1>
 // Two column layout

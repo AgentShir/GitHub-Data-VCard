@@ -26,6 +26,7 @@ header {
 
 }
 
-article {
-
+.customer {
+    width: 300px;
+    align-content: flex-start;
 }
