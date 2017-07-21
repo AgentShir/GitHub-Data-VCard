@@ -23,7 +23,8 @@ wrapper { background: black;
 }
 
 header {
-    
+    text-align: center;
+    text-transform: uppercase;
 
 }
 

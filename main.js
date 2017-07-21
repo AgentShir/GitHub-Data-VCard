@@ -35,6 +35,13 @@ fuction displayInfo () {
 //     list += `<li>${person.name}</li>`;
 //   });
 
+let header = document.querySelector('header')
+
+let htmlString = ""
+    htmlString = `<div class=header>
+      <h1>Shireen Garcia</h1>
+    </div>`
+
 let htmlString = ""
 
 htmlString +=
