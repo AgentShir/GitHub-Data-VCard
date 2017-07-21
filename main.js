@@ -1,6 +1,7 @@
-let req = new XMLHttpRequest();
-req.open('GET', '/https://api.github.com/users/AgentShir');
-req.send();
+let request = new XMLHttpRequest();
+request.addEventListener("load", displayInfo)
+request.open('GET', '/https://api.github.com/users/AgentShir');
+request.send();
 
 // let req = new XMLHttpRequest();
 // req.open("GET", "https://api.github.com/");
@@ -12,12 +13,22 @@ req.send();
 // }
 
 // Look carefully at the function
-fuction displayCharacters () {
+fuction displayInfo () {
   let data = JSON.parse(this.responseText);
   let list = ' ';
 }
 
 // Redo below
 data.results.forEach (function(person) {
-  list += `<li>${person.name}</li>`;
+  list += `<li>${person.login}</li>`;
 });
+
+// // Our display function
+// function displayCharacters () {
+//   // Parse our response text
+//   let data = JSON.parse(this.responseText);
+//   let list = '';
+//
+//   data.results.forEach( function (person) {
+//     list += `<li>${person.name}</li>`;
+//   });
