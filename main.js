@@ -35,6 +35,8 @@ fuction displayInfo () {
 //     list += `<li>${person.name}</li>`;
 //   });
 
+let htmlString = ""
+
 htmlString +=
 `<div class="basics">
     <h2>The Basics</h2>
