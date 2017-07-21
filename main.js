@@ -1,3 +1,5 @@
+let container = document.querySelector('.basics');
+
 let request = new XMLHttpRequest();
 request.addEventListener("load", displayInfo)
 request.open('GET', '/https://api.github.com/users/AgentShir');
@@ -19,9 +21,9 @@ fuction displayInfo () {
 }
 
 // Redo below
-data.results.forEach (function(person) {
-  list += `<li>${person.login}</li>`;
-});
+// data.results.forEach (function(person) {
+//   list += `<li>${person.login}</li>`;
+// });
 
 // // Our display function
 // function displayCharacters () {
