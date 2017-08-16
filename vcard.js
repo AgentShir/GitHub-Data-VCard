@@ -17,11 +17,26 @@ function reqListener(){
   let company = data.company;
   let website = data.blog;
   let bio = data.bio;
-  let create = `<div>${name}</div>
-                <div>${url}</div>
-                <div>${company}</div>
-                <div>${website}</div>
-                <div>${bio}</div>
+  let avatar = data.avatar_url;
+  let create = `<div class="wrapper">
+              <div class="header">${name}</div>
+                <div class="container">
+                  <div class="basics">
+                    <h2>The Basics</h2>
+                    <div class="name">Name: ${name}</div>
+                    <div class="url">GitHub URL: ${url}</div>
+                    <div class="company">Company: ${company}</div>
+                    <div class="website">Website: ${website}</div>
+                  </div>
+                  <div class="story">
+                    <h2>The Story</h2>
+                    <div class="bio">${bio}</div>
+                  </div>
+                  <div class="imageContainer">
+                    <div class="image"><img src="${avatar}"</div>
+                  </div>
+                </div>
+                </div>
                 `;
   console.log(create);
 

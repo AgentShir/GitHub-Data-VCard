@@ -2,13 +2,16 @@ wrapper { background: black;
 
 }
 
-.container {
+.header {
   position: relative;
-    padding: 8px 8px 32px 8px;
-    background: gray;
+  padding: 8px 8px 32px 8px;
+  background: gray;
+  height: 100px;
+  text-align: center;
+  font-size: 90px;
 }
 
-.container:after {
+.header:after {
     background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
@@ -22,13 +25,34 @@ wrapper { background: black;
     height: 32px;
 }
 
-header {
-    text-align: center;
-    text-transform: uppercase;
+.wrapper{
+  width: 1000px;
+  margin: auto;
+}
 
+.container {
+  display: flex;
+}
+
+h2 {
+  font-size: 35px;
 }
 
 .basics {
-    width: 300px;
-    align-content: flex-start;
+  padding-left: 20px;
+}
+
+.story {
+ width: 300px;
+ padding-left: 40px;
+}
+
+.image {
+  padding-left: 50px;
+}
+
+img{
+ border-radius: 100%;
+ width: 200px;
+ height: 200px;
 }
